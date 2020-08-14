@@ -1,0 +1,20 @@
+---
+providers:
+  cloudflare:
+    class: octodns.provider.cloudflare.CloudflareProvider
+    email: env/CLOUDFLARE_EMAIL
+    token: env/CLOUDFLARE_API_KEY
+  digitalocean:
+    class: octodns.provider.digitalocean.DigitalOceanProvider
+    token: env/DIGITALOCEAN_ACCESS_TOKEN
+zones:
+  randall.family.:
+    sources:
+      - cloudflare
+    targets:
+      - digitalocean
+  theoneblk.xyz.:
+    sources:
+      - cloudflare
+    targets:
+      - digitalocean
