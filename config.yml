@@ -1,0 +1,29 @@
+---
+providers:
+  config:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./config
+    default_ttl: 5
+    enforce_order: true
+    populate_should_replace: true
+  cloudflare:
+    class: octodns_cloudflare.CloudflareProvider
+    token: env/CLOUDFLARE_API_KEY
+  digitalocean:
+    class: octodns_digitalocean.DigitalOceanProvider
+    token: env/DIGITALOCEAN_ACCESS_TOKEN
+zones:
+  randall.family.:
+    sources:
+      - cloudflare
+      - config
+    targets:
+      - cloudflare
+      - digitalocean
+  theoneblk.xyz.:
+    sources:
+      - cloudflare
+      - config
+    targets:
+      - cloudflare
+      - digitalocean

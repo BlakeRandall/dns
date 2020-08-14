@@ -1,0 +1,53 @@
+---
+'':
+  - ttl: 300
+    type: CAA
+    values:
+    - flags: 0
+      tag: issue
+      value: amazon.com.
+    - flags: 0
+      tag: issue
+      value: amazonaws.com.
+    - flags: 0
+      tag: issue
+      value: amazontrust.com.
+    - flags: 0
+      tag: issue
+      value: awstrust.com.
+    - flags: 0
+      tag: issue
+      value: comodoca.com.
+    - flags: 0
+      tag: issue
+      value: digicert.com.
+    - flags: 0
+      tag: issue
+      value: letsencrypt.org.
+    - flags: 0
+      tag: issue
+      value: pki.goog.
+    - flags: 0
+      tag: issuewild
+      value: amazon.com.
+    - flags: 0
+      tag: issuewild
+      value: amazonaws.com.
+    - flags: 0
+      tag: issuewild
+      value: amazontrust.com.
+    - flags: 0
+      tag: issuewild
+      value: awstrust.com.
+    - flags: 0
+      tag: issuewild
+      value: comodoca.com.
+    - flags: 0
+      tag: issuewild
+      value: digicert.com.
+    - flags: 0
+      tag: issuewild
+      value: letsencrypt.org.
+    - flags: 0
+      tag: issuewild
+      value: pki.goog.
